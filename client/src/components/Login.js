@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {NavLink ,useNavigate} from "react-router-dom"
-
 import "./mix.css";
 
 const Login = () => {
@@ -95,6 +94,8 @@ const loginuser = async(e)=>{
             </div>
             <button className='btn' onClick={loginuser}>Login</button>
             <p>Don't Have an Account? <NavLink to="/register">Sign Up</NavLink></p>
+            <p style={{color:"black",fontWeight:"bold"}}>Forgot Password  <NavLink to="/password-reset">Click Here</NavLink> </p>
+            
           </form>
         </div>
       </section>

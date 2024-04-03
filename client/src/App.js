@@ -4,6 +4,8 @@ import Login from "./components/Login";
 import { Routes, Route,useNavigate } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Error from "./components/Error";
+import PasswordReset from "./components/PasswordReset";
+import ForgotPassword from "./components/ForgotPassword";
 import Register from "./components/Register";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
@@ -57,6 +59,8 @@ function App() {
               <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dash" element={<Dashboard />} />
+              <Route path="/password-reset" element={<PasswordReset />} />
+              <Route path="/forgotpassword/:id/:token" element={<ForgotPassword />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </>

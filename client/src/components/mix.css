@@ -118,3 +118,14 @@ form .btn:hover{
     color:#718096 ;
     border-bottom: 2px solid #8694a8;
 }
+
+.form_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .forgot_password {
+    color: #1a365d;
+  }
+  
